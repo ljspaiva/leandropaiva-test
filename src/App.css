@@ -6,3 +6,63 @@
   width: 98%;
   height: 98%;
 }
+
+.header-theme {
+  background-color: whitesmoke;
+  color: #070606c4;
+  display: flex;
+  font-size: 1.4rem;
+  padding: 15px;
+}
+
+.img-header {
+  width: 200px;
+}
+
+.header-span {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0;
+  width: 50%;
+}
+
+.form-wallet {
+  margin: auto;
+}
+
+.form-wallet-1 {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 5px;
+  padding: 5px 8px;
+  width: 130px;
+}
+
+.form-wallet-2 {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 5px;
+  padding: 5px 8px;
+  width: 100px;
+}
+
+.btn-edit {
+  background-color: rgb(238, 255, 0);
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.btn-delete {
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
