@@ -36,7 +36,7 @@ class TableWallet extends React.Component {
                 exchangeRates,
               } = result;
               return (
-                <tr key={id}>
+                <tr key={ id }>
                   <td>{description}</td>
                   <td>{tag}</td>
                   <td>{method}</td>
@@ -49,13 +49,13 @@ class TableWallet extends React.Component {
                     <BsPen
                       className="btn-edit"
                       type="button"
-                      onClick={() => this.handleClick(id)}
+                      onClick={ () => this.handleClick(id) }
                       data-testid="edit-btn"
                     />
                     <BsTrashFill
                       className="btn-delete"
                       type="button"
-                      onClick={() => this.handleClick(id)}
+                      onClick={ () => this.handleClick(id) }
                       data-testid="delete-btn"
                     />
                   </td>

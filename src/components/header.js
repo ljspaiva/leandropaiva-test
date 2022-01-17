@@ -24,7 +24,7 @@ class Header extends React.Component {
     const { email, expenses } = this.props;
     return (
       <div className="header-theme">
-        <img className="img-header" src={logoTrybe} alt="Logotipo da Trybe" />
+        <img className="img-header" src={ logoTrybe } alt="Logotipo da Trybe" />
         <div className="container header-span">
           <span data-testid="email-field">{`Email: ${email}`}</span>
           <span data-testid="total-field">

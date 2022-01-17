@@ -65,8 +65,8 @@ class Wallet extends React.Component {
               className="form-wallet-2"
               id="value"
               name="value"
-              value={value}
-              onChange={this.handleChange}
+              value={ value }
+              onChange={ this.handleChange }
             />
           </label>
           <label htmlFor="exchange">
@@ -75,12 +75,12 @@ class Wallet extends React.Component {
               className="form-wallet-2"
               id="exchange"
               name="currency"
-              value={exchange}
-              onChange={this.handleChange}
+              value={ exchange }
+              onChange={ this.handleChange }
             >
               {currencies.map((currency, index) => (
-                <option key={index}>
-                  {currency}
+                <option key={ index }>
+                  { currency }
                 </option>
               ))}
             </select>
@@ -91,8 +91,8 @@ class Wallet extends React.Component {
               className="form-wallet-1"
               id="method"
               name="method"
-              onChange={this.handleChange}
-              value={method}
+              onChange={ this.handleChange }
+              value={ method }
             >
               <option>Dinheiro</option>
               <option>Cartão de crédito</option>
@@ -101,7 +101,13 @@ class Wallet extends React.Component {
           </label>
           <label htmlFor="tag">
             Tag
-            <select id="tag" name="tag" value={tag} onChange={this.handleChange} className="form-wallet-1">
+            <select
+              id="tag"
+              name="tag"
+              value={ tag }
+              onChange={ this.handleChange }
+              className="form-wallet-1"
+            >
               <option>Alimentação</option>
               <option>Lazer</option>
               <option>Trabalho</option>
@@ -115,14 +121,14 @@ class Wallet extends React.Component {
               className="form-wallet-1"
               id="description"
               name="description"
-              value={description}
-              onChange={this.handleChange}
+              value={ description }
+              onChange={ this.handleChange }
             />
           </label>
           <button
             className="btn btn-primary mb-2"
             type="submit"
-            onClick={this.handleClick}
+            onClick={ this.handleClick }
             value="Adicionar Despesas"
           >
             Adicionar Despesa
@@ -136,7 +142,7 @@ class Wallet extends React.Component {
     const { email } = this.props;
     return (
       <div>
-        <Header email={email} />
+        <Header email={ email } />
         <nav className="navbar navbar-dark bg-dark nav-color">
           {this.renderForm()}
         </nav>

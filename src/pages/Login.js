@@ -27,10 +27,10 @@ class Login extends React.Component {
   validation() {
     const { email, password } = this.state;
     const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
+    const maxL = 6;
     const emailValid = (regex.test(email));
 
-    if (emailValid && password.length >= 6) {
+    if (emailValid && password.length >= maxL) {
       this.setState({ disabled: false });
     } else {
       this.setState({ disabled: true });
@@ -59,13 +59,13 @@ class Login extends React.Component {
             id="login-email"
             name="email"
             type="email"
-            value={email}
-            onChange={this.handleChange}
+            value={ email }
+            onChange={ this.handleChange }
             data-testid="email-input"
             placeholder="Email"
           />
         </label>
-        <p></p>
+        <p />
         <label htmlFor="login-password">
           Senha:
           <input
@@ -75,8 +75,8 @@ class Login extends React.Component {
             id="login-password"
             type="password"
             name="password"
-            value={password}
-            onChange={this.handleChange}
+            value={ password }
+            onChange={ this.handleChange }
           />
         </label>
       </>
@@ -90,7 +90,7 @@ class Login extends React.Component {
         <img
           id="login-img"
           className="login-img-card"
-          src={trybeLogo}
+          src={ trybeLogo }
           alt="trybe-login"
         />
         <p id="profile-name" className="profile-name-card" />
@@ -101,14 +101,14 @@ class Login extends React.Component {
               className="btn btn-success btn-block"
               type="submit"
               value="Entrar"
-              onClick={this.handleClick}
-              disabled={disabled}
+              onClick={ this.handleClick }
+              disabled={ disabled }
             >
               Entrar
             </button>
           </div>
         </form>
-      </div >
+      </div>
     );
   }
 
